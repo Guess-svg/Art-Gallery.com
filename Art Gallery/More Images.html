@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title>Museum</title>
+<link rel="stylesheet" href="index.css"> <!-- This links the index to the css page for the visuals and also have the same visuals as the index page -->
+<link rel="stylesheet" href="More Images.css"> <!-- This links this page to its specific css page and is for the main visuals of this page-->
+<link rel="stylesheet" href="nav.css"> <!--This is for all pages and links the css for the nav bar to this page, giving the nav bar a special look-->
+<style> 
+
+  input[type="file"] {
+    font-size: 18px;          
+    padding: 10px;            
+    background-color: #ff9c38a2; 
+    color: #f7f6f6;          
+    border-radius: 6px;      
+    cursor: pointer;
+  }
+
+  input[type="file"]::-webkit-file-upload-button {
+    background-color: #041a92;  
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #1a5be0;  
+  }
+</style> <!--This is for a button where you can upload an image or peice of artwork (which is what we mainly intend)
+          also making it look more visually apealing-->
+
+<body>
+     <nav>
+        <ul>
+            <li>
+                <a href="Index.html">"Home"</a>
+            </li>
+            <li>
+                <a href="More Images.html">"Museum"</a>
+            </li>
+        </ul>
+    </nav> <!--This is the for the nav bar-->
+    <style> body {background: linear-gradient( to right, #6196ff,#f9b050);  height:100vh }</style> <!--Background-->
+
+<h1>Museum</h1>
+<p>This is where you upload your own images to be wiewed by other aspiring artists and possible commisioners</p>
+    <img src="acd168926fd198a618b866fab18f58de.jpg" width="600" height="300">
+
+<p>Upload the image here!</p> <!--All of this is just text for the website-->
+
+
+    <input type="file" id="imageInput" accept="image/*">
+    
+     <div>
+    <img id="preview" src="" alt="Image Preview" style="display:none;">
+  </div>
+  <script>
+    const imageInput = document.getElementById('imageInput');
+    const preview = document.getElementById('preview');
+
+    imageInput.addEventListener('change', function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          preview.src = e.target.result;
+          preview.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  </script> <!--This code is for the button to upload the image got a little bit of help from online-->
+
+  
+  
+
+
+    
+</body>
+</html>

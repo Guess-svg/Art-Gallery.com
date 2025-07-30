@@ -1,0 +1,15 @@
+nav {
+    width: 100%;
+    background-color: #243e3ebd;
+    color: rgb(255, 255, 255);
+    justify-content: space-around;
+    font-size: x-large;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+} /*This is for the nav bar giving it its colour, size, allignment and anorher feature called "position: fixed;" which makes the nav bar follow where you go*/
+nav a{
+    color: #feecdb;
+} /*This is for the colour of the text in the nav bar*/

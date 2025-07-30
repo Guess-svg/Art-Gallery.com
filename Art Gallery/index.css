@@ -1,0 +1,22 @@
+body{
+  padding-top: 80px; 
+}
+/*This ensures that there is space at the top so the nav bar is not blocking the main heading of the webstie*/
+h1 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+/*This is for the visuals of the first header*/
+p {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+/*This is for the visuals of the paragraphs*/
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*This is for the visuals of the images*/
